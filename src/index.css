@@ -3,56 +3,56 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Viking Mode Design System - Masculine, Bold, Spiritually Grounded */
+/* Nomadic Journey Design System - Wanderer, Desert, Spiritually Grounded */
 
 @layer base {
   :root {
-    /* Core Brand Colors - Dark & Masculine */
-    --background: 220 13% 8%;
+    /* Core Brand Colors - Desert & Masculine */
+    --background: 30 20% 8%;
     --foreground: 39 100% 85%;
 
-    --card: 220 13% 10%;
+    --card: 30 20% 10%;
     --card-foreground: 39 100% 85%;
 
-    --popover: 220 13% 10%;
+    --popover: 30 20% 10%;
     --popover-foreground: 39 100% 85%;
 
-    /* Viking Gold Primary */
-    --primary: 39 100% 50%;
-    --primary-foreground: 220 13% 8%;
+    /* Desert Gold Primary */
+    --primary: 35 100% 50%;
+    --primary-foreground: 30 20% 8%;
 
-    /* Iron Secondary */
-    --secondary: 220 9% 20%;
+    /* Sand Secondary */
+    --secondary: 30 15% 20%;
     --secondary-foreground: 39 100% 85%;
 
-    --muted: 220 9% 15%;
-    --muted-foreground: 39 50% 65%;
+    --muted: 30 12% 15%;
+    --muted-foreground: 35 50% 65%;
 
-    --accent: 15 78% 45%;
+    --accent: 25 75% 45%;
     --accent-foreground: 39 100% 95%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 39 100% 95%;
 
-    --border: 220 13% 18%;
-    --input: 220 13% 15%;
-    --ring: 39 100% 50%;
+    --border: 30 15% 18%;
+    --input: 30 15% 15%;
+    --ring: 35 100% 50%;
 
     --radius: 0.75rem;
 
-    /* Custom Viking Colors */
-    --viking-gold: 39 100% 50%;
-    --viking-bronze: 30 80% 40%;
-    --viking-iron: 220 9% 25%;
-    --viking-stone: 220 9% 40%;
-    --warrior-red: 15 78% 45%;
+    /* Custom Nomadic Colors */
+    --nomad-gold: 35 100% 50%;
+    --nomad-bronze: 28 80% 40%;
+    --nomad-sand: 30 15% 25%;
+    --nomad-stone: 30 12% 40%;
+    --desert-red: 25 75% 45%;
   }
 
   body {
     @apply bg-background text-foreground font-bold;
     background-image: 
-      radial-gradient(circle at 25% 25%, hsl(39 100% 50% / 0.05) 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, hsl(15 78% 45% / 0.05) 0%, transparent 50%);
+      radial-gradient(circle at 25% 25%, hsl(35 100% 50% / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, hsl(25 75% 45% / 0.05) 0%, transparent 50%);
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -62,20 +62,20 @@
 }
 
 @layer components {
-  .viking-gradient {
-    background: linear-gradient(135deg, hsl(39 100% 50%) 0%, hsl(30 80% 40%) 100%);
+  .nomad-gradient {
+    background: linear-gradient(135deg, hsl(35 100% 50%) 0%, hsl(28 80% 40%) 100%);
   }
 
-  .warrior-glow {
-    box-shadow: 0 0 20px hsl(39 100% 50% / 0.3);
+  .desert-glow {
+    box-shadow: 0 0 20px hsl(35 100% 50% / 0.3);
   }
 
-  .rune-border {
-    border: 2px solid hsl(39 100% 50%);
-    border-image: linear-gradient(45deg, hsl(39 100% 50%), hsl(30 80% 40%)) 1;
+  .caravan-border {
+    border: 2px solid hsl(35 100% 50%);
+    border-image: linear-gradient(45deg, hsl(35 100% 50%), hsl(28 80% 40%)) 1;
   }
 
-  .battle-ready {
+  .journey-ready {
     @apply bg-gradient-to-r from-amber-500 to-orange-600 text-black font-black py-4 px-8 rounded-lg transform transition-all duration-200 hover:scale-105;
     box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
   }
