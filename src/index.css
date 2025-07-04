@@ -3,85 +3,85 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Nomadic Journey Design System - Wanderer, Desert, Spiritually Grounded */
+/* Viking Mode Design System - Norse Warrior, Battle-Ready, Spiritually Grounded */
 
 @layer base {
   :root {
-    /* Core Brand Colors - Desert & Masculine */
-    --background: 30 20% 8%;
-    --foreground: 39 100% 85%;
+    /* Core Brand Colors - Norse & Masculine */
+    --background: 220 15% 8%;
+    --foreground: 210 40% 85%;
 
-    --card: 30 20% 10%;
-    --card-foreground: 39 100% 85%;
+    --card: 220 15% 10%;
+    --card-foreground: 210 40% 85%;
 
-    --popover: 30 20% 10%;
-    --popover-foreground: 39 100% 85%;
+    --popover: 220 15% 10%;
+    --popover-foreground: 210 40% 85%;
 
-    /* Desert Gold Primary */
-    --primary: 35 100% 50%;
-    --primary-foreground: 30 20% 8%;
+    /* Viking Gold Primary */
+    --primary: 45 100% 50%;
+    --primary-foreground: 220 15% 8%;
 
-    /* Sand Secondary */
-    --secondary: 30 15% 20%;
-    --secondary-foreground: 39 100% 85%;
+    /* Iron Secondary */
+    --secondary: 215 20% 20%;
+    --secondary-foreground: 210 40% 85%;
 
-    --muted: 30 12% 15%;
-    --muted-foreground: 35 50% 65%;
+    --muted: 215 15% 15%;
+    --muted-foreground: 210 30% 65%;
 
-    --accent: 25 75% 45%;
-    --accent-foreground: 39 100% 95%;
+    --accent: 10 80% 50%;
+    --accent-foreground: 210 40% 95%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 39 100% 95%;
+    --destructive-foreground: 210 40% 95%;
 
-    --border: 30 15% 18%;
-    --input: 30 15% 15%;
-    --ring: 35 100% 50%;
+    --border: 215 15% 18%;
+    --input: 215 15% 15%;
+    --ring: 45 100% 50%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Custom Nomadic Colors */
-    --nomad-gold: 35 100% 50%;
-    --nomad-bronze: 28 80% 40%;
-    --nomad-sand: 30 15% 25%;
-    --nomad-stone: 30 12% 40%;
-    --desert-red: 25 75% 45%;
+    /* Custom Viking Colors */
+    --viking-gold: 45 100% 50%;
+    --viking-bronze: 30 80% 40%;
+    --viking-iron: 215 20% 25%;
+    --viking-steel: 215 15% 40%;
+    --battle-red: 10 80% 50%;
   }
 
   body {
     @apply bg-background text-foreground font-bold;
     background-image: 
-      radial-gradient(circle at 25% 25%, hsl(35 100% 50% / 0.05) 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, hsl(25 75% 45% / 0.05) 0%, transparent 50%);
+      radial-gradient(circle at 25% 25%, hsl(45 100% 50% / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, hsl(10 80% 50% / 0.05) 0%, transparent 50%);
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-black text-foreground;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
   }
 }
 
 @layer components {
-  .nomad-gradient {
-    background: linear-gradient(135deg, hsl(35 100% 50%) 0%, hsl(28 80% 40%) 100%);
+  .viking-gradient {
+    background: linear-gradient(135deg, hsl(45 100% 50%) 0%, hsl(30 80% 40%) 100%);
   }
 
-  .desert-glow {
-    box-shadow: 0 0 20px hsl(35 100% 50% / 0.3);
+  .battle-glow {
+    box-shadow: 0 0 20px hsl(45 100% 50% / 0.4);
   }
 
-  .caravan-border {
-    border: 2px solid hsl(35 100% 50%);
-    border-image: linear-gradient(45deg, hsl(35 100% 50%), hsl(28 80% 40%)) 1;
+  .norse-border {
+    border: 2px solid hsl(45 100% 50%);
+    border-image: linear-gradient(45deg, hsl(45 100% 50%), hsl(30 80% 40%)) 1;
   }
 
-  .journey-ready {
-    @apply bg-gradient-to-r from-amber-500 to-orange-600 text-black font-black py-4 px-8 rounded-lg transform transition-all duration-200 hover:scale-105;
-    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+  .battle-ready {
+    @apply bg-gradient-to-r from-yellow-500 to-orange-600 text-black font-black py-4 px-8 rounded-lg transform transition-all duration-200 hover:scale-105;
+    box-shadow: 0 4px 15px rgba(234, 179, 8, 0.4);
   }
 
-  .scripture-text {
-    @apply text-amber-200 italic font-medium leading-relaxed;
+  .rune-text {
+    @apply text-yellow-200 italic font-medium leading-relaxed;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
   }
 }

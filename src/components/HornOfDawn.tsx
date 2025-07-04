@@ -39,18 +39,18 @@ const HornOfDawn = () => {
   return (
     <div className="space-y-6">
       {/* Current Time & Status */}
-      <Card className="bg-gradient-to-r from-amber-500/10 to-orange-600/10 border-amber-500/30">
+      <Card className="bg-gradient-to-r from-yellow-500/10 to-orange-600/10 border-yellow-500/30">
         <CardContent className="p-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-full flex items-center justify-center">
                 <Clock className="w-8 h-8 text-black" />
               </div>
               <div>
                 <div className="text-3xl font-black text-foreground">
                   {currentTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                 </div>
-                <div className="text-amber-400 font-semibold">
+                <div className="text-yellow-400 font-semibold">
                   {currentTime.toLocaleDateString([], { weekday: 'long', month: 'long', day: 'numeric' })}
                 </div>
               </div>
@@ -62,7 +62,7 @@ const HornOfDawn = () => {
                 HORN SOUNDED
               </Badge>
             ) : (
-              <Badge variant="outline" className="border-amber-500 text-amber-400 px-4 py-2">
+              <Badge variant="outline" className="border-yellow-500 text-yellow-400 px-4 py-2">
                 AWAITING BATTLE CRY
               </Badge>
             )}
@@ -74,17 +74,17 @@ const HornOfDawn = () => {
         {/* Daily Scripture */}
         <Card className="bg-card/50 border-border">
           <CardHeader>
-            <CardTitle className="flex items-center text-amber-400">
+            <CardTitle className="flex items-center text-yellow-400">
               <Shield className="w-6 h-6 mr-2" />
               TODAY'S SHIELD VERSE
             </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="text-center space-y-4">
-              <div className="text-sm font-bold text-amber-500 uppercase tracking-wide">
+              <div className="text-sm font-bold text-yellow-500 uppercase tracking-wide">
                 {dailyScripture.verse}
               </div>
-              <div className="scripture-text text-lg leading-relaxed">
+              <div className="rune-text text-lg leading-relaxed">
                 "{dailyScripture.text}"
               </div>
               <div className="text-xs text-muted-foreground italic">
@@ -97,7 +97,7 @@ const HornOfDawn = () => {
         {/* Battle Cry */}
         <Card className="bg-card/50 border-border">
           <CardHeader>
-            <CardTitle className="text-amber-400">YOUR BATTLE CRY</CardTitle>
+            <CardTitle className="text-yellow-400">YOUR BATTLE CRY</CardTitle>
             <p className="text-muted-foreground text-sm">
               Declare your intention for today. Speak it with conviction.
             </p>
@@ -147,19 +147,19 @@ const HornOfDawn = () => {
         <CardContent>
           <div className="grid md:grid-cols-3 gap-6 text-sm">
             <div className="space-y-2">
-              <div className="font-bold text-amber-400">1. WAKE WITH PURPOSE</div>
+              <div className="font-bold text-yellow-400">1. WAKE WITH PURPOSE</div>
               <div className="text-stone-300">
                 No snooze. Feet on floor. Thank God for another day to build His kingdom.
               </div>
             </div>
             <div className="space-y-2">
-              <div className="font-bold text-amber-400">2. FORTIFY WITH TRUTH</div>
+              <div className="font-bold text-yellow-400">2. FORTIFY WITH TRUTH</div>
               <div className="text-stone-300">
                 Read today's shield verse. Let God's word set the foundation for everything else.
               </div>
             </div>
             <div className="space-y-2">
-              <div className="font-bold text-amber-400">3. DECLARE WAR</div>
+              <div className="font-bold text-yellow-400">3. DECLARE WAR</div>
               <div className="text-stone-300">
                 Write your battle cry. Speak it aloud. This is your covenant with the day.
               </div>
